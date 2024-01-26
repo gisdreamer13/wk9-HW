@@ -40,21 +40,26 @@
 
 
 import Container from 'react-bootstrap/Container'
-import Post from "./Components/Post"
+
+
+import { Posts } from "./components/Posts"
 import Header from './components/Header'
+import Body from './components/Body'
+import Random from './components/Random'
+
 
 export default function App(){
 
-  const post = []
+  
   return (
     <Container fluid data-bs-theme='dark' className='app'>
       <Header />
-      <h1>Anime Go!</h1>
-      <h3>Welcome!</h3>
-
-      {post.length > 0 ? postMessage.map((post) => {
-        return <Post key={post.id} post={post} />
-      }) : <p>No Posts to Display</p>}
+      {/* <h1>Anime Go!</h1>
+      <h3>Welcome!</h3> */}
+      <Body>
+        {/* <Posts /> */}
+        <Random />
+      </Body>
     </Container>
   )
 }
