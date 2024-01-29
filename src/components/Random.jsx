@@ -13,7 +13,7 @@ export default function Random() {
         'Shangri-La Frontier',
         'Afro Samurai',
         'Black Clover',
-        'Tokyo Revenger',
+        'Tokyo Revengers',
         'Tokyo Ghoul',
         'One Punch Man',
         'Demon Slayer',
