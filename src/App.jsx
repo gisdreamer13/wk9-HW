@@ -25,7 +25,6 @@ export default function App(){
         <Route path='/' element={<LandingPage />} />
         <Route path='/login' element={<FormPage> <Login /> </FormPage>} />
         <Route path='/register' element={<FormPage><Register/></FormPage>} />
-        <Route path='/' element={<LandingPage />} />
       </Routes>
     </Container>
   )

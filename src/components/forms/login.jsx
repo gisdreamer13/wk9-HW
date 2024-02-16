@@ -1,9 +1,11 @@
 import { useState } from "react"
+import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function login() {
-    const [user, setUser] = useState({ username: '', password: '' })
+    const [user, setUser] = useState({ username: '', password: '', logged_in: false })
     const [ isLogging, setIsLogging ] = useState(false)
-
+    const navigate = useNavigate();
     if (isLogging) {
         loginUser()
     }
@@ -18,6 +20,7 @@ export default function login() {
         if (res.ok) {
             const data = await res.json()
             console.log(data);
+            navigate('/',{replace:true})
         }
         setIsLogging(false)
     }
@@ -35,6 +38,10 @@ export default function login() {
 
     return (
         <>
+        { user && user.logged_in?
+            <Navigate to="/Register" replace={true} />
+            :
+            <div>
             <h3>Login</h3>
             <form action="" id='Login-form' onSubmit={handleSubmit}>
                 <label htmlFor="username"></label><br />
@@ -43,6 +50,8 @@ export default function login() {
                 <input type="password" name={'password'} /><br />
                 <input type="submit" value={'Login'} />
             </form>
+            </div>
+            }
         </>
     )
 }
