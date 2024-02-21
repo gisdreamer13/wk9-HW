@@ -9,6 +9,7 @@ export default function Header() {
           <Navbar.Brand href="/">Anime Go!</Navbar.Brand>
           <Nav.Link href='/register'>Register</Nav.Link>
           <Nav.Link href='/login'>Login</Nav.Link>
+          <Nav.Link href='/logout'>Logout</Nav.Link>
         </Container>
 </Navbar>
   )

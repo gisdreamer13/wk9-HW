@@ -13,6 +13,7 @@ import LandingPage from './pages/LandingPage'
 import FormPage from './pages/FormPage'
 import Login from './components/forms/Login'
 import { Route, Routes } from 'react-router-dom'
+// import Logout from './components/Logout'
 
 
 export default function App(){
