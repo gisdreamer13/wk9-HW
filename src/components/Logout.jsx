@@ -5,12 +5,12 @@ import { useNavigate } from "react-router-dom"
 
 export default function Logout() {
 
-    const { logoutUser, updateLocalStorage } = useContext(UserContext)
+    const { logoutUser } = useContext(UserContext)
     const navigate = useNavigate()
 
     useEffect(()=> {
         logoutUser()
-        updateLocalStorage()
+        localStorage.removeItem('user')
         navigate('/login')
     }, [logoutUser])
 

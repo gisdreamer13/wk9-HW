@@ -21,15 +21,10 @@ export default function Land() {
     }, []);
 
 
-    // return (
-    //     <h1>Welcome</h1>
-    //   )
-    // }
-
 
     return (
         <div>
-          <h1>Featured</h1>
+          <h1>Featured Anime</h1>
           <div className='item-container'>
             {results.map((results) => (
               <div className='card'>

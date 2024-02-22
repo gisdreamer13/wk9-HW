@@ -13,7 +13,7 @@ import LandingPage from './pages/LandingPage'
 import FormPage from './pages/FormPage'
 import Login from './components/forms/Login'
 import { Route, Routes } from 'react-router-dom'
-// import Logout from './components/Logout'
+import Logout from './components/Logout'
 
 
 export default function App(){
@@ -26,6 +26,7 @@ export default function App(){
         <Route path='/' element={<LandingPage />} />
         <Route path='/login' element={<FormPage> <Login /> </FormPage>} />
         <Route path='/register' element={<FormPage><Register/></FormPage>} />
+        <Route path='logout' element={<Logout/>} />
       </Routes>
     </Container>
   )
