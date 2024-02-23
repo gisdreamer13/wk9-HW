@@ -14,6 +14,7 @@ import FormPage from './pages/FormPage'
 import Login from './components/forms/Login'
 import { Route, Routes } from 'react-router-dom'
 import Logout from './components/Logout'
+import Add from './components/forms/Add'
 
 
 export default function App(){
@@ -27,6 +28,7 @@ export default function App(){
         <Route path='/login' element={<FormPage> <Login /> </FormPage>} />
         <Route path='/register' element={<FormPage><Register/></FormPage>} />
         <Route path='logout' element={<Logout/>} />
+        <Route path='/add' element={<FormPage><Add/></FormPage>} />
       </Routes>
     </Container>
   )
