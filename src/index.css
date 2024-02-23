@@ -39,3 +39,28 @@
 .sidebar .nav-item .active {
   background-color: #def;
 }
+
+
+h1 {
+  text-align: center;
+  padding-top: 2em;
+}
+.item-container {
+  display: flex;
+  justify-content: wrap;
+  flex-wrap: wrap;
+  gap: 2em;
+  padding-top: 4em;
+}
+.card {
+  text-align: center;
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  padding: 1em;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+img {
+  height: 290px;
+  width: auto;
+}
