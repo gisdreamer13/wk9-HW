@@ -45,8 +45,9 @@ export default function login() {
         if (res.ok) {
             const data = await res.json()
             console.log(data);
-            updateUser(data.user)
-            localStorage.setItem('user', data.user)
+            updateUser({username: user.username})
+            console.log(data.user)
+            localStorage.setItem('user', JSON.stringify(data.user))
             navigate('/',{replace:true})
         }
         

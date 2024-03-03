@@ -5,7 +5,7 @@ export default function UserProvider({ children }) {
     const [user, setUser] = useState({ username: '', token: '', followed: '' })
 
     function updateUser({ username, token, followed }) {
-        setUser({ username, token, followed })
+        setUser({ username, token, followed})
     }
 
     function logoutUser(){
