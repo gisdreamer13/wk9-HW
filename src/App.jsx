@@ -16,6 +16,7 @@ import { Route, Routes } from 'react-router-dom'
 import Logout from './components/Logout'
 import Add from './components/forms/Add'
 import Update from './components/forms/Update'
+import Delete from './components/forms/Delete'
 
 
 export default function App(){
@@ -31,6 +32,7 @@ export default function App(){
         <Route path='logout' element={<Logout/>} />
         <Route path='/add' element={<FormPage><Add/></FormPage>} />
         <Route path='/update' element={<FormPage><Update/></FormPage>} />
+        <Route path='/delete' element={<FormPage><Delete/></FormPage>} />
       </Routes>
     </Container>
   )

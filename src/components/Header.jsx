@@ -21,6 +21,7 @@ export default function Header() {
                         <Link to='/register'>Register</Link>
                         <Link to='/add'>Add Show</Link>
                         <Link to='/update'>Update Show</Link>
+                        <Link to='/delete'>Delete Show</Link>
                     </>
                 }
         </Container>
