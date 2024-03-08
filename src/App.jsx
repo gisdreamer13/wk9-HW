@@ -17,6 +17,7 @@ import Logout from './components/Logout'
 import Add from './components/forms/Add'
 import Update from './components/forms/Update'
 import Delete from './components/forms/Delete'
+import Mylist from './components/Mylist'
 
 
 export default function App(){
@@ -33,6 +34,7 @@ export default function App(){
         <Route path='/add' element={<FormPage><Add/></FormPage>} />
         <Route path='/update' element={<FormPage><Update/></FormPage>} />
         <Route path='/delete' element={<FormPage><Delete/></FormPage>} />
+        <Route path='/mylist' element={<Mylist/>} />
       </Routes>
     </Container>
   )

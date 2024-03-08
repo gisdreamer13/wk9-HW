@@ -2,9 +2,9 @@ import { useState } from 'react'
 import React, { useEffect } from 'react';
 import { Container } from "react-bootstrap"
 
-const URL = 'http://127.0.0.1:5000/anime';
+const URL = 'http://localhost:5173/Mylist';
 
-export default function Land() {
+export default function myList() {
     const [results, setResults] = useState([])
     
     useEffect(() => {
@@ -24,7 +24,7 @@ export default function Land() {
 
     return (
         <div>
-          <h1>Featured Anime</h1>
+          <h1>My List</h1>
           <div className='item-container'>
             {results.map((results) => (
               <div className='card'>

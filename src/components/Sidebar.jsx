@@ -11,7 +11,7 @@ export default function SIdebar() {
             <Nav.Link href='/'>Top Rated</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-            <Nav.Link href='/'>My List</Nav.Link>
+            <Nav.Link href='http://localhost:5173/Mylist'>My List</Nav.Link>
         </Nav.Item>
     </Navbar>
   )
